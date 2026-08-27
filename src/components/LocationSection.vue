@@ -183,6 +183,12 @@ const openGoogleMaps = () => {
   height: 100%;
   object-fit: cover;
   display: block;
+  filter: grayscale(100%) contrast(106%) brightness(98%);
+  transition: filter 0.6s ease;
+}
+
+.castle-photo-frame:hover img {
+  filter: grayscale(60%) contrast(106%);
 }
 
 .location-action {

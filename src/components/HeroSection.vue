@@ -250,7 +250,7 @@ const scrollDown = () => {
 /* Grand Date Overlay */
 .date-overlay-layer {
   position: absolute;
-  top: 39%;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -396,7 +396,7 @@ const scrollDown = () => {
     padding: 0;
     position: relative;
     z-index: 15;
-    margin: 0 0 4px 0;
+    margin: 0 0 24px 0;
     opacity: 0;
   }
 

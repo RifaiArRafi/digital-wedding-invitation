@@ -13,12 +13,29 @@ export function useGuest() {
   const hasCustomGuest = ref(false)
   const isEnvelopeOpen = ref(false)
 
-  const parseGuestFromUrl = () => {
+  const parseGuestFromUrl = async () => {
     if (typeof window === 'undefined') return
 
     const params = new URLSearchParams(window.location.search)
-    
-    // Check parameters in order of preference
+    const idParam = params.get('id')
+
+    // ID-based lookup from JSON
+    if (idParam && idParam.trim() !== '') {
+      try {
+        const res = await fetch('/data/Daftar_Undangan_Baong.json')
+        const list: Array<{ No: number; 'Nama Undangan': string; ID: string }> = await res.json()
+        const found = list.find(g => g.ID.toUpperCase() === idParam.toUpperCase())
+        if (found) {
+          hasCustomGuest.value = true
+          guest.value.name = found['Nama Undangan'].trim()
+          return
+        }
+      } catch (e) {
+        console.warn('Failed to load guest list:', e)
+      }
+    }
+
+    // Fallback: name-based params (legacy support)
     const nameParam = params.get('to') || params.get('guest') || params.get('name') || params.get('p') || params.get('u')
     const seatsParam = params.get('seats') || params.get('pax') || params.get('qty')
     const tableParam = params.get('table')
@@ -26,7 +43,6 @@ export function useGuest() {
 
     if (nameParam && nameParam.trim() !== '') {
       hasCustomGuest.value = true
-      // Clean up plus signs and underscores if present
       const cleanName = decodeURIComponent(nameParam.replace(/\+/g, ' ')).trim()
       guest.value.name = cleanName
     }
@@ -52,8 +68,8 @@ export function useGuest() {
     isEnvelopeOpen.value = false
   }
 
-  onMounted(() => {
-    parseGuestFromUrl()
+  onMounted(async () => {
+    await parseGuestFromUrl()
     // Auto-open invitation envelope on landing if guest specified
     if (hasCustomGuest.value) {
       isEnvelopeOpen.value = true
