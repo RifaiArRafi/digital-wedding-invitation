@@ -55,7 +55,7 @@ const bgPhoto = ref('https://images.unsplash.com/photo-1511285560929-80b456fea0b
             <div class="parents-divider"></div>
             <p class="parents-label">Son of</p>
             <p class="parents-names">
-              Mr. Sumarto <br class="mobile-break" />&amp; Mrs. Solihat
+              Mr. Sumarto (Alm)<br class="mobile-break" />&amp; Mrs. Solihat (Almh)
             </p>
           </div>
         </div>
@@ -95,7 +95,7 @@ const bgPhoto = ref('https://images.unsplash.com/photo-1511285560929-80b456fea0b
             <div class="parents-divider"></div>
             <p class="parents-label">Daughter of</p>
             <p class="parents-names">
-              Mr. Isan <br class="mobile-break" />&amp; Mrs. Rukmawati
+              Mr. Isan<br class="mobile-break" />&amp; Mrs. Rukmawati
             </p>
           </div>
         </div>
