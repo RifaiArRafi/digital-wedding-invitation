@@ -2,11 +2,7 @@
 import { ref } from 'vue'
 import { Menu, X } from 'lucide-vue-next'
 
-const emit = defineEmits<{
-  (e: 'open-rsvp'): void
-  (e: 'open-faqs'): void
-  (e: 'open-info'): void
-}>()
+
 
 const isMobileMenuOpen = ref(false)
 
