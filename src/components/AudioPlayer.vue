@@ -5,7 +5,7 @@ import { Volume2, VolumeX } from 'lucide-vue-next'
 const isPlaying = ref(false)
 const audioElement = ref<HTMLAudioElement | null>(null)
 
-const AUDIO_SRC = '/audio/wedding-song.mp3'
+const AUDIO_SRC = '/audio/San Francisco Street.mp3'
 
 const playAudio = async () => {
   if (!audioElement.value) {

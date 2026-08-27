@@ -6,10 +6,11 @@ import type { RsvpSubmission } from './types/wedding'
 import HeaderNav from './components/HeaderNav.vue'
 import GuestEnvelopeModal from './components/GuestEnvelopeModal.vue'
 import HeroSection from './components/HeroSection.vue'
-
+import CoupleSection from './components/CoupleSection.vue'
 import ScheduleSection from './components/ScheduleSection.vue'
 import LocationSection from './components/LocationSection.vue'
 import CountdownSection from './components/CountdownSection.vue'
+import DigitalEnvelopeSection from './components/DigitalEnvelopeSection.vue'
 import DetailsSection from './components/DetailsSection.vue'
 import FooterSection from './components/FooterSection.vue'
 import RsvpModal from './components/RsvpModal.vue'
@@ -51,7 +52,7 @@ const handleRsvpSubmitted = (data: RsvpSubmission) => {
 onMounted(() => {
   const setupScrollReveal = () => {
     const targets = document.querySelectorAll(
-      'section > .container, .timeline-item, .detail-card, .location-card, .countdown-unit, .story-content, .footer-content'
+      'section > .container, .timeline-item, .couple-card, .detail-card, .location-card, .countdown-unit, .bank-card, .story-content, .footer-content'
     )
     
     const observer = new IntersectionObserver(
@@ -96,17 +97,23 @@ onMounted(() => {
         @open-rsvp="openRsvp"
       />
 
-      <!-- Schedule Section (Dark Editorial) -->
-      <ScheduleSection />
+      <!-- Couple / Mempelai Section (Dark Editorial) -->
+      <CoupleSection />
 
       <!-- Registry & Dress Code Section -->
       <DetailsSection :guest="guest" :has-custom-guest="hasCustomGuest" />
 
+      <!-- Schedule Section (Dark Editorial) -->
+      <ScheduleSection />
+
+      <!-- Location Section -->
+      <LocationSection />
+
       <!-- Countdown Section (Floral Dark) -->
       <CountdownSection />
 
-      <!-- Location Section (Dunhaven Castle Kerry) -->
-      <LocationSection />
+      <!-- Digital Envelope Section (Gift / No Rekening) -->
+      <DigitalEnvelopeSection />
     </main>
 
     <!-- Footer -->

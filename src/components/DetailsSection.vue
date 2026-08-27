@@ -38,19 +38,17 @@ const copyBankDetails = () => {
           <h2 class="card-heading">DRESS CODE</h2>
           <div class="dress-title">BLACK TIE / MONOCHROME EDITORIAL</div>
           <p class="card-desc" style="margin-bottom: 20px;">
-            To create a timeless photographic memory, we invite our guests to wear elegant attire in shades of black, deep slate, champagne, or crisp white accents.
+            To create a timeless photographic memory, we invite our guests to wear elegant attire in shades of black, charcoal, or deep slate.
           </p>
 
           <div class="palette-swatches">
             <div class="swatch"><div class="color-circle" style="background: #111111;"></div><span>Black</span></div>
             <div class="swatch"><div class="color-circle" style="background: #2d2d2d;"></div><span>Charcoal</span></div>
             <div class="swatch"><div class="color-circle" style="background: #6c757d;"></div><span>Slate</span></div>
-            <div class="swatch"><div class="color-circle" style="background: #d8cbbd;"></div><span>Champagne</span></div>
-            <div class="swatch"><div class="color-circle" style="background: #ffffff; border: 1px solid #ddd;"></div><span>Ivory</span></div>
           </div>
 
           <div class="dress-tips">
-            <p><strong>Gentlemen:</strong> Classic black tuxedos or dark formal suits with bowtie or necktie.</p>
+            <p><strong>Gentlemen:</strong> Classic black tuxedos or dark informal suits with bowtie or necktie.</p>
             <p><strong>Ladies:</strong> Floor-length gowns, refined cocktail dresses, or sleek tailored evening wear.</p>
           </div>
         </div>
@@ -107,19 +105,17 @@ const copyBankDetails = () => {
         <div class="modal-body">
           <div class="dress-title">BLACK TIE / MONOCHROME EDITORIAL</div>
           <p class="dress-desc">
-            To create a timeless photographic memory, we invite our guests to wear elegant attire in shades of black, deep slate, champagne, or crisp white accents.
+            To create a timeless photographic memory, we invite our guests to wear elegant attire in shades of black, charcoal, or deep slate.
           </p>
 
           <div class="palette-swatches">
             <div class="swatch"><div class="color-circle" style="background: #111111;"></div><span>Black</span></div>
             <div class="swatch"><div class="color-circle" style="background: #2d2d2d;"></div><span>Charcoal</span></div>
             <div class="swatch"><div class="color-circle" style="background: #6c757d;"></div><span>Slate</span></div>
-            <div class="swatch"><div class="color-circle" style="background: #d8cbbd;"></div><span>Champagne</span></div>
-            <div class="swatch"><div class="color-circle" style="background: #ffffff; border: 1px solid #ddd;"></div><span>Ivory</span></div>
           </div>
 
           <div class="dress-tips">
-            <p><strong>Gentlemen:</strong> Classic black tuxedos or dark formal suits with bowtie or necktie.</p>
+            <p><strong>Gentlemen:</strong> Classic black tuxedos or dark informal suits with bowtie or necktie.</p>
             <p><strong>Ladies:</strong> Floor-length gowns, refined cocktail dresses, or sleek tailored evening wear.</p>
           </div>
         </div>

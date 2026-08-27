@@ -48,7 +48,7 @@ const scrollDown = () => {
       <div class="center-photo">
         <div class="center-img-wrapper">
           <img 
-            src="/images/YOS07521.jpg" 
+            src="/images/center.jpeg" 
             alt="Setiawan & Elma Embracing"
             class="bw-image"
           />
@@ -82,7 +82,7 @@ const scrollDown = () => {
 
         <div class="mobile-center-photo">
           <img 
-            src="/images/YOS07521.jpg" 
+            src="/images/center.jpeg" 
             alt="Setiawan & Elma Embracing"
             class="bw-image"
           />
@@ -250,7 +250,7 @@ const scrollDown = () => {
 /* Grand Date Overlay */
 .date-overlay-layer {
   position: absolute;
-  top: 42%;
+  top: 39%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -263,13 +263,13 @@ const scrollDown = () => {
   font-family: var(--font-serif);
   font-size: clamp(68px, 11vw, 165px);
   letter-spacing: 0.02em;
-  font-weight: 400;
+  font-weight: 700;
+  -webkit-text-stroke: 0.8px #141414;
   color: #141414;
   margin: 0;
   margin-right: -0.02em; /* Offset for optical balance */
   white-space: nowrap;
   user-select: none;
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
 }
 
 /* Scroll indicator */
@@ -388,15 +388,15 @@ const scrollDown = () => {
     font-family: var(--font-serif);
     font-size: clamp(44px, 13.5vw, 62px);
     letter-spacing: 0.02em;
-    font-weight: 400;
+    font-weight: 700;
+    -webkit-text-stroke: 0.7px #141414;
     color: #141414;
     text-align: center;
     line-height: 1;
     padding: 0;
     position: relative;
     z-index: 15;
-    margin: 0 0 -26px 0;
-    text-shadow: 0 0 12px rgba(255, 255, 255, 0.9), 0 0 4px #ffffff;
+    margin: 0 0 4px 0;
     opacity: 0;
   }
 
