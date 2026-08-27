@@ -55,7 +55,7 @@ const bgPhoto = ref('https://images.unsplash.com/photo-1511285560929-80b456fea0b
             <div class="parents-divider"></div>
             <p class="parents-label">Son of</p>
             <p class="parents-names">
-              Mr. Sumarto (Alm)<br class="mobile-break" />&amp; Mrs. Solihat (Almh)
+              Mr. Sumarto (Alm)<br class="mobile-break" />&amp; Mrs. Solihat (Almrh)
             </p>
           </div>
         </div>
